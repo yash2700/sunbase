@@ -1,0 +1,47 @@
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.form-group {
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column; /* Adjusted to vertical layout */
+}
+
+.btn {
+    width: 10rem;
+    height: 2rem;
+    background-color: plum;
+    border: 1px solid plum;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.btn-group{
+    display: flex;
+    gap: 4rem;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+input {
+    width: 100%; /* Adjusted to full width */
+    height: 1.5rem;
+    border: 1.5px solid gray;
+    border-radius: .3rem;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,55 @@
+body{
+    background-color:#36454F;
+    color:ghostwhite;
+}
+h2{
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #36454F;
+}
+.action-btns {
+    display: flex;
+    justify-content: center;
+}
+.action-btns button {
+    margin: 0 5px;
+}
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.pagination button {
+    margin: 0 5px;
+}
+#pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.btn{
+    width: 10rem;
+    height: 2rem;
+    background-color:plum;
+    border: 1px solid plum;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+nav{
+    margin: 1rem;
+}

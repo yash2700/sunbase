@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Customers</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    <h2>Customers List</h2>
+    <nav>
+        <button id="addCustomer" class="btn">Add Customer</button>
+        <select id="fieldSelect">
+            <option value="first_name">First Name</option>
+            <option value="city">City</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+        </select>
+        <input type="text" id="searchInput">
+        <button id="searchButton" class="btn">Search</button>
+        <button id="sync" class="btn">Sync</button>
+    </nav>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Street</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="customerTableBody">
+            <!-- Table rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <!-- Input field and buttons for row fetching -->
+    <div id="pagination">
+        Rows: <input type="number" id="rowsInput" value="10">
+        <button id="fetchNextPage">Next</button>
+        <button id="fetchByRows">Fetch</button>
+    </div>
+
+    <script src="view.js"></script>
+</body>
+</html>
